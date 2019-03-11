@@ -1,0 +1,8 @@
+language: ruby
+rvm:
+  - 2.4.2
+services: mongodb
+before_script:
+  - mongo boatnslip --eval "db.createCollection('slips')"
+  - mongo boatnslip --eval "db.createCollection('boats')"
+script: bundle exec rake

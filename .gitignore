@@ -1,0 +1,5 @@
+/.vscode
+/Gemfile.lock
+/.idea/
+/logs/
+*.log
